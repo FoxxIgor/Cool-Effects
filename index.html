@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cool Effects</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@200&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <div class="Container">
+            <h1>Cool Effects</h1>
+            <br>
+            <label> Filter color: </label>
+            <input type="color" id="inputColorName">
+    
+            <button onclick="colorFilter()" class="filterButtons"> Apply Color</button>
+            <button onclick="applyBlur()" class="filterButtons"> Apply Blur</button>
+            <button onclick="applyInvert()" class="filterButtons"> Apply Invert Effect</button>
+            <button onclick="applyGray()" class="filterButtons"> Apply Gray Effect</button>
+            <button onclick="applyBlack()" class="filterButtons"> Apply Black Effect</button>
+            <!--<input type="text" id="inputUrl"> -->
+            <!--<button onclick="insertImg()" class="filterButtons"> Apply Your Image</button>-->
+            <button onclick="takeSnapshot()" class="filterButtons"> Save Image</button>
+            <br>
+            <button onclick="cameraMode()" class="filterButtons"> Take a photo (Camera Mode)</button>
+        </div>
+
+        <script src="main.js"></script>
+    </body>
+</html>
